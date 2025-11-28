@@ -88,6 +88,7 @@ class SignupView extends StatelessWidget {
 
                         const Gap(30),
                         const CustomAuthButton(
+                          
                           title: 'Create Account',
                           color: Color(0xff1820FF),
                         ),
