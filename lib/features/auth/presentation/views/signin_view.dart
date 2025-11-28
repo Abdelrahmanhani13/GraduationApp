@@ -66,9 +66,38 @@ class SigninView extends StatelessWidget {
                       Gap(30),
                       CustomAuthButton(),
                       Gap(10),
-                      CustomText(title: 'Forgot your password?',),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: CustomText(title: 'Forgot your password?'),
+                      ),
                       Gap(100),
                       OrDivider(),
+                      Gap(30),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset('assets/images/Login alternative.png'),
+                          Gap(40),
+                          Image.asset('assets/images/Logo.png'),
+                        ],
+                      ),
+                      Gap(40),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CustomText(
+                            title: 'Don\'t have an account?',
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                          ),
+                          Gap(5),
+                          CustomText(
+                            title: 'Sign up',
+                            fontWeight: FontWeight.w600,
+                            fontSize: 12,
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -80,5 +109,3 @@ class SigninView extends StatelessWidget {
     );
   }
 }
-
-
