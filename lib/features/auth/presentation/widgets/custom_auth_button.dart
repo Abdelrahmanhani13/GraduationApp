@@ -3,10 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 class CustomAuthButton extends StatelessWidget {
   const CustomAuthButton({
-    super.key, required this.title, required this.color,
+    super.key, required this.title, required this.color, this.textColor,
   });
   final String title;
   final Color color;
+  final Color? textColor;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,7 +28,7 @@ class CustomAuthButton extends StatelessWidget {
             style: GoogleFonts.alexandria(
               fontWeight: FontWeight.w600,
               fontSize: 12,
-              color: Colors.white,
+              color: textColor,
             ),
           ),
         ),

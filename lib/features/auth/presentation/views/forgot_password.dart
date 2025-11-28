@@ -41,7 +41,7 @@ class ForgotPassword extends StatelessWidget {
                       ),
                     ),
                     Gap(30),
-                    CustomAuthButton(title: 'Send the Code', color: Colors.black),
+                    CustomAuthButton(title: 'Send the Code', color: Color(0xffFF4747),textColor: Colors.black,),
                     Gap(50),
                   ],
                 ),

@@ -45,7 +45,8 @@ class NewPassword extends StatelessWidget {
                     Gap(30),
                     CustomAuthButton(
                       title: 'Reset Password',
-                      color: Colors.black,
+                      color: Color(0xffFF4747),
+                      textColor: Colors.black,
                     ),
                     Gap(50),
                   ],

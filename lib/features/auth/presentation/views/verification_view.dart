@@ -43,7 +43,11 @@ class VerificationView extends StatelessWidget {
                       ),
                     ),
                     Gap(30),
-                    CustomAuthButton(title: 'Verify', color: Colors.black),
+                    CustomAuthButton(
+                      title: 'Verify',
+                      color: Color(0xffFF4747),
+                      textColor: Colors.black,
+                    ),
                     Gap(50),
                   ],
                 ),
