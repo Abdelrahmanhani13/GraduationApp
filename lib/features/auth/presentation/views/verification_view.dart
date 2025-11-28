@@ -6,8 +6,8 @@ import 'package:graduation_project/features/auth/presentation/widgets/custom_aut
 import 'package:graduation_project/features/auth/presentation/widgets/custom_text_field_title.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_text_form_field.dart';
 
-class ForgotPassword extends StatelessWidget {
-  const ForgotPassword({super.key});
+class VerificationView extends StatelessWidget {
+  const VerificationView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +16,11 @@ class ForgotPassword extends StatelessWidget {
         body: Column(
           children: [
             Gap(30),
-            CustomAuthTitleText(title: 'Forgot Password'),
+            CustomAuthTitleText(title: 'Enter the verification code'),
             Gap(10),
             CustomAuthBodyText(
               text:
-                  'At our app, we take the security of your information seriously.',
+                  'We’ve sent you a verification code. Please enter it below.',
             ),
             Gap(70),
             Padding(
@@ -33,7 +33,9 @@ class ForgotPassword extends StatelessWidget {
                 child: Column(
                   children: [
                     Gap(30),
-                    const CustomTextFieldTitle(title: 'Enter your email'),
+                    const CustomTextFieldTitle(
+                      title: 'Enter your verification code',
+                    ),
                     const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10),
                       child: CustomTextFormField(
@@ -41,7 +43,7 @@ class ForgotPassword extends StatelessWidget {
                       ),
                     ),
                     Gap(30),
-                    CustomAuthButton(title: 'Send the Code', color: Colors.black),
+                    CustomAuthButton(title: 'Verify', color: Colors.black),
                     Gap(50),
                   ],
                 ),

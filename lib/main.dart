@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:graduation_project/features/auth/presentation/views/forgot_password.dart';
+import 'package:graduation_project/features/auth/presentation/views/verification_view.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Graduation Project',
       theme: ThemeData(
       ),
-      home:ForgotPassword(),
+      home:VerificationView(),
     );
   }
 }
