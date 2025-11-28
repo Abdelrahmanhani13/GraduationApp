@@ -7,6 +7,7 @@ import 'package:graduation_project/features/auth/presentation/widgets/custom_aut
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_title_text.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_text_field_title.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_text_form_field.dart';
+import 'package:graduation_project/features/auth/presentation/widgets/or_dividor.dart';
 
 class SigninView extends StatelessWidget {
   const SigninView({super.key});
@@ -66,8 +67,8 @@ class SigninView extends StatelessWidget {
                       CustomAuthButton(),
                       Gap(10),
                       CustomText(title: 'Forgot your password?',),
-                      Gap(50),
-                      
+                      Gap(100),
+                      OrDivider(),
                     ],
                   ),
                 ),
