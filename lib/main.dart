@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:graduation_project/splash_view.dart';
-
+import 'package:graduation_project/features/auth/presentation/views/signin_view.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Graduation Project',
       theme: ThemeData(
       ),
-      home:SplashView(),
+      home:SigninView(),
     );
   }
 }
