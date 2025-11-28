@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:graduation_project/core/widgets/custom_text.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_body_text.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_button.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_title_text.dart';
@@ -63,6 +64,10 @@ class SigninView extends StatelessWidget {
                       ),
                       Gap(30),
                       CustomAuthButton(),
+                      Gap(10),
+                      CustomText(title: 'Forgot your password?',),
+                      Gap(50),
+                      
                     ],
                   ),
                 ),
