@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_body_text.dart';
+import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_button.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_title_text.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_text_field_title.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_text_form_field.dart';
@@ -60,6 +61,8 @@ class SigninView extends StatelessWidget {
                           suffixIcon: Icon(Icons.visibility_off),
                         ),
                       ),
+                      Gap(30),
+                      CustomAuthButton(),
                     ],
                   ),
                 ),
@@ -71,3 +74,5 @@ class SigninView extends StatelessWidget {
     );
   }
 }
+
+
