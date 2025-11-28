@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_body_text.dart';
 import 'package:graduation_project/features/auth/presentation/widgets/custom_auth_title_text.dart';
+import 'package:graduation_project/features/auth/presentation/widgets/custom_text_field_title.dart';
 
 class SigninView extends StatelessWidget {
   const SigninView({super.key});
@@ -41,7 +42,8 @@ class SigninView extends StatelessWidget {
                       ),
                     ),
                     Gap(10),
-                    CustomTextFieldTitle()
+                    CustomTextFieldTitle(title: 'Email',)
+                    
                   ],
                 ),
               ),
